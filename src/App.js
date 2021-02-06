@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "App.css";
-import thumb from "./demo.jpg";
+import React from 'react';
+// import ReactDOM from "react-dom";
+import './App.css';
+import thumb from './demo.jpg';
 
 const App = () => (
   <div>
