@@ -41,7 +41,8 @@ const StyledApp = styled.div`
     height: 100%;
     filter: brightness(0.8);
     z-index: -1;
-    min-height: 100vh;
+    min-height: 90vh;
+    object-fit: cover;
   }
 `;
 

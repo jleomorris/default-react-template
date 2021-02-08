@@ -7,7 +7,7 @@ const Home = () => {
     <StyledHome>
       <div className="content-container">
         <p>
-          A preconfigured React environment. With the following ready to go:
+          A preconfigured React environment, with the following ready to go:
         </p>
         <ul>
           <li>Babel, Webpack</li>
@@ -27,33 +27,58 @@ const StyledHome = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  min-height: 100vh;
+  align-items: flex-start;
+  min-height: 90vh;
 
   .content-container {
-    width: 60%;
-    border-radius: 2rem;
-    background: rgba(256, 256, 256, 0.2);
+    width: 40%;
+    background: rgba(0, 0, 0, 0.3);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: center;
+    align-items: end;
     padding: 4rem;
-    margin: 4rem 0rem;
+    height: 90vh;
+    position: relative;
+
+    @media (max-width: 800px) {
+      width: 70%;
+    }
   }
 
   p {
-    font-size: 2rem;
-    width: 80%;
-    color: black;
-    margin: 2rem;
+    font-size: 5rem;
+    width: 80vw;
+    color: white;
+
+    @media (max-width: 800px) {
+      font-size: 3rem;
+      margin-left: 20rem;
+    }
   }
 
   ul {
-    color: black;
+    color: white;
     font-size: 1.5rem;
-    list-style: circle;
-    font-weight: 700;
+    list-style: none;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-60%);
+    right: -100px;
+
+    @media (max-width: 800px) {
+      right: -50px;
+    }
+
+    li {
+      background: rgba(256, 256, 256, 0.2);
+      padding: 0.5rem 1rem;
+      margin: 1rem 0rem;
+      border-radius: 0rem 1rem 1rem 0rem;
+    }
   }
 `;
 

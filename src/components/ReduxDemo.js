@@ -124,6 +124,10 @@ const StyledTable = styled.div`
     align-items: center;
     padding: 4rem;
     margin: 4rem 0rem;
+
+    @media (max-width: 800px) {
+      width: 90%;
+    }
   }
 
   table {
