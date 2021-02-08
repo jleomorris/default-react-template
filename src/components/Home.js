@@ -56,13 +56,12 @@ const StyledHome = styled.div`
 
     @media (max-width: 800px) {
       font-size: 3rem;
-      margin-left: 20rem;
     }
   }
 
   ul {
     color: white;
-    font-size: 1.5rem;
+    font-size: 2rem;
     list-style: none;
     position: absolute;
     top: 60%;

@@ -111,7 +111,17 @@ const StyledTable = styled.div`
   h1 {
     color: black;
     text-align: center;
-    margin: 2rem 0rem;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 5rem;
+    width: 100%;
+
+    @media (max-width: 1600px) {
+      top: -30px;
+      left: 50%;
+    }
   }
 
   .content-container {
@@ -122,8 +132,9 @@ const StyledTable = styled.div`
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
-    margin: 4rem 0rem;
+    padding: 6rem 8rem;
+    margin: 6rem 0rem;
+    position: relative;
 
     @media (max-width: 800px) {
       width: 90%;
@@ -131,6 +142,7 @@ const StyledTable = styled.div`
   }
 
   table {
+    width: 60%;
     color: white;
     background: rgba(0, 0, 0, 0.4);
     font-size: 1.5rem;
@@ -147,15 +159,24 @@ const StyledTable = styled.div`
 
 const StyledSubmitListing = styled.div`
   form {
+    @media (max-width: 1000px) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
     input {
       border-radius: 0.5rem;
       padding: 1rem 0.5rem;
       border: none;
       margin: 1rem 0.5rem;
+      outline: none;
     }
 
     button {
       padding: 0.5rem 1rem;
+      outline: none;
     }
   }
 `;
